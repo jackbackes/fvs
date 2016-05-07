@@ -59,23 +59,6 @@ ListNode.prototype.shiftNode = function(value){
 }
 
 ListNode.prototype.append = function(otherList) {
-  // var currentNode = new ListNode(this.value, null);
-  // var startNode = currentNode;
-  // var nextNode;
-  // var startAppend = new ListNode(otherList.value, otherList.next);
-  // while(!!currentNode){
-  //   // console.log(currentNode);
-  //   if(!!currentNode.next) {
-  //     nextNode = new ListNode(currentNode.value, currentNode.next);
-  //   } else {
-  //     nextNode = null;
-  //   }
-  //   currentNode.next = nextNode;
-  //   currentNode = currentNode.next;
-  // }
-  // currentNode.next = startAppend;
-  //
-  // return startNode;
   if( !this.next ) {
     return otherList.shiftNode(this.value);
   } else {
